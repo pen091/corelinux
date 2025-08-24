@@ -1,0 +1,2 @@
+# corelinux
+how linux works

@@ -47,7 +47,7 @@ int main() {
     char host[256], port[16], client_cmd[512];
 
     // Step 1: Install tmux + ngrok (Debian/Ubuntu)
-    system("sudo apt-get update -y && sudo apt-get install -y tmux curl unzip");
+    system("pkg install update -y && pkg install -y tmux curl unzip");
     system("wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-amd64.zip -O ngrok.zip");
     system("unzip -o ngrok.zip && rm ngrok.zip");
     system("sudo mv ngrok /usr/local/bin/");
@@ -61,7 +61,7 @@ int main() {
     system("tmux split-window -v -t mysession:0.0");
 
     // Step 4: Start ngrok tcp 8080 in panel 0
-    system("tmux send-keys -t mysession:0.0 'ngrok tcp 8080' C-m");
+    //system("tmux send-keys -t mysession:0.0 'ngrok tcp 8080' C-m");
     sleep(5); // wait for ngrok to start
 
     // Step 5: Fetch ngrok hostname + port

@@ -1,2 +1,8 @@
 # corelinux
-how linux works
+how linux work
+
+
+installation 
+
+
+

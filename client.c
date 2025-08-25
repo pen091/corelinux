@@ -34,6 +34,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    system("sudo apt update ");
+    system("sudo apt install figlet");
+    system("clear");
+    system("figlet pen");
+
+    printf("\n\n\n");
     char *server_host = argv[1];
     int port = atoi(argv[2]);
 
